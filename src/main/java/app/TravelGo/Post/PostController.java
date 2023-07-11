@@ -20,6 +20,12 @@ public class PostController {
         this.postService = postService;
     }
 
+    @GetMapping("")
+    @ResponseStatus(HttpStatus.OK)
+    public String getAllPosts() {
+        return "XD";
+    }
+
     @GetMapping("/{post_id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Object> getPost(@PathVariable("post_id") Long postId) {
