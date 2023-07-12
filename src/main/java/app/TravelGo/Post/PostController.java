@@ -16,14 +16,17 @@ public class PostController {
     private PostService postService;
 
     @Autowired
+    private PostRepository postsRepository;
+
+    @Autowired
     public PostController(PostService postService) {
         this.postService = postService;
     }
 
-    @GetMapping("")
+    @GetMapping("/")
     @ResponseStatus(HttpStatus.OK)
-    public String getAllPosts() {
-        return "XD";
+    public @ResponseBody Iterable<Post> getAllPosts() {
+        return postsRepository.findAll();
     }
 
     @GetMapping("/{post_id}")
@@ -54,14 +57,13 @@ public class PostController {
 
     @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<Void> createPost(@RequestBody CreatePostRequest request, UriComponentsBuilder builder) {
-        Post post = Post.builder()
-                .title(request.getTitle())
-                .content(request.getContent())
-                .build();
-        postService.createPost(post);
-        return ResponseEntity.created(builder.pathSegment("api", "posts", "{post_id}")
-                .buildAndExpand(post.getId()).toUri()).build();
+    public @ResponseBody String createPost(@RequestParam String title, String content) {
+       Post post = new Post();
+       post.setTitle(title);
+       post.setContent(content);
+       post.setLikes(0);
+       postsRepository.save(post);
+       return "Post created";
     }
 
     //TODO getComments, createComment, deleteComment & obvi entity comments

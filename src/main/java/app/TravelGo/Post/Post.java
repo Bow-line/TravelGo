@@ -6,6 +6,7 @@ import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Getter
@@ -19,7 +20,8 @@ import java.time.LocalDateTime;
 @Table(name = "posts")
 public class Post implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "posts")
+    @SequenceGenerator(name = "my_entity_seq_gen", sequenceName = "MY_ENTITY_SEQ")
     @Column(name = "id")
     private Long id;
 
@@ -28,15 +30,17 @@ public class Post implements Serializable {
     @Column(columnDefinition = "TEXT")
     private String content;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    private User user;
+    //    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "user_id")
+//    private User user;
+    @Column(name = "user_id")
+    private int user;
 
     private String status;
     private int likes;
 
     @Column(name = "created_at")
-    private LocalDateTime createdAt;
+    private Long createdAt;
 
 
 }
