@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CreateUserRequest {
+    private Long id;
     private String username;
     private String name;
     private String surname;

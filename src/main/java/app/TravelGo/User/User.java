@@ -21,7 +21,7 @@ import java.util.List;
 @Table(name = "users")
 public class User implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
@@ -29,15 +29,9 @@ public class User implements Serializable {
     private String name;
     private String surname;
     private String email;
-    private Integer phone_number;
+    private Integer phoneNumber;
     private Integer privileges;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
-
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
-    @ToString.Exclude
-    private List<Post> posts = new ArrayList<>();
-
-
 }
