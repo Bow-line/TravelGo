@@ -11,7 +11,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("api/trips")
 public class TripController {
-    private TripService tripService;
+    final private TripService tripService;
 
     @Autowired
     public TripController(TripService tripService) {
@@ -46,5 +46,7 @@ public class TripController {
         return ResponseEntity.notFound().build();
     }
     //TODO createTrip, rateTrip, acrhiveTrip
+
+
 
 }
