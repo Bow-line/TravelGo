@@ -1,6 +1,7 @@
 package app.TravelGo.Post;
 
 import app.TravelGo.dto.CreatePostRequest;
+import app.TravelGo.dto.CreateUserRequest;
 import app.TravelGo.dto.GetPostResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,17 +17,15 @@ public class PostController {
     private PostService postService;
 
     @Autowired
-    private PostRepository postsRepository;
-
-    @Autowired
     public PostController(PostService postService) {
         this.postService = postService;
     }
 
     @GetMapping("/")
     @ResponseStatus(HttpStatus.OK)
-    public @ResponseBody Iterable<Post> getAllPosts() {
-        return postsRepository.findAll();
+    public @ResponseBody
+    Iterable<Post> getAllPosts() {
+        return postService.getPosts();
     }
 
     @GetMapping("/{post_id}")
@@ -57,18 +56,21 @@ public class PostController {
 
     @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
-    public @ResponseBody String createPost(@RequestParam String title, String content) {
-       Post post = new Post();
-       post.setTitle(title);
-       post.setContent(content);
-       post.setLikes(0);
-       postsRepository.save(post);
-       return "Post created";
+    public @ResponseBody
+    ResponseEntity<Void> createPost(@RequestBody CreatePostRequest request, UriComponentsBuilder builder) {
+        Post post = Post.builder()
+                .title(request.getTitle())
+                .content(request.getContent())
+                .likes(0)
+                .build();
+
+        post = postService.createPost(post);
+
+        return ResponseEntity.created(builder.pathSegment("api", "posts", "{id}")
+                .buildAndExpand(post.getId()).toUri()).build();
     }
 
     //TODO getComments, createComment, deleteComment & obvi entity comments
-
-
 
 
 }
