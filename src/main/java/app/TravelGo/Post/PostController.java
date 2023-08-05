@@ -62,6 +62,7 @@ public class PostController {
                 .title(request.getTitle())
                 .content(request.getContent())
                 .likes(0)
+                .status(request.getStatus())
                 .build();
 
         post = postService.createPost(post);

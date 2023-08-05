@@ -5,62 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4488f4b2-7c81-45fe-b9c8-f2b89f868ca9" name="Default Changelist" comment="Add user registration and log in">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/dto/GetDocumentResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/dto/GetOfferResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Document/DocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Document/DocumentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Document/DocumentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Document/DocumentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Document/DocumentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Document/DocumentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Offer/OfferController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Offer/OfferController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Offer/OfferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Offer/OfferRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Offer/OfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Offer/OfferService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Trip/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Trip/TripController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Post/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Post/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Post/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Post/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/dto/CreatePostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/dto/CreatePostRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Class" />
+        <option value="emiliapiesnikowska &lt;emila.piesnikowska@gmail.com&gt;" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="demo/invalid/JPA" />
+      <facet id="demo/invalid/Spring" />
+    </ignored-facets>
   </component>
   <component name="ProjectId" id="2SyKGkpL0liaPbQNIbtxUMLVFyL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="app.TravelGo.dto" />
-    </key>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Maven.demo [spring-boot:run]">
+    <configuration type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -111,13 +117,9 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="app.TravelGo.MainApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Maven.demo [spring-boot:run]" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -127,12 +129,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690113291072</updated>
-      <workItem from="1690225103722" duration="2362000" />
     </task>
+    <task id="LOCAL-00001" summary="Authorization fix">
+      <created>1690912135651</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690912135651</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -144,9 +150,23 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add user registration and log in" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user registration and log in" />
+    <MESSAGE value="Create document and offer controller, repository and service" />
+    <MESSAGE value="Authorization fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authorization fix" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/TravelGo/User/User.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -3,6 +3,7 @@ package app.TravelGo.Post;
 import app.TravelGo.User.User;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -20,7 +21,7 @@ import java.time.LocalDateTime;
 @Table(name = "posts")
 public class Post implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "posts")
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "posts")
     @SequenceGenerator(name = "my_entity_seq_gen", sequenceName = "MY_ENTITY_SEQ")
     @Column(name = "id")
     private Long id;
@@ -30,17 +31,20 @@ public class Post implements Serializable {
     @Column(columnDefinition = "TEXT")
     private String content;
 
+    // TODO: auto assign user to post
     //    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "user_id")
-//    private User user;
+    //    @JoinColumn(name = "user_id")
+    //    private User user;
+
     @Column(name = "user_id")
     private int user;
 
-    private String status;
+    private int status;
     private int likes;
 
+    @CreationTimestamp
     @Column(name = "created_at")
-    private Long createdAt;
+    private LocalDateTime createdAt;
 
 
 }
