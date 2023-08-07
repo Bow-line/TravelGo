@@ -1,7 +1,5 @@
 package app.TravelGo.User;
 
-import app.TravelGo.Post.Post;
-import app.TravelGo.Post.PostRepository;
 import app.TravelGo.dto.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

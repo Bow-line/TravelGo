@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4488f4b2-7c81-45fe-b9c8-f2b89f868ca9" name="Default Changelist" comment="Add user registration and log in">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_07_2023_15_10_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_07_2023_15_10__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Post/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Post/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/Post/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/Post/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/dto/CreatePostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/dto/CreatePostRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/User/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/User/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/User/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/TravelGo/User/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/TravelGo/User/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690912135651</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix REST API for posts">
+      <created>1691261166455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691261166455</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,7 +167,8 @@
     <MESSAGE value="Add user registration and log in" />
     <MESSAGE value="Create document and offer controller, repository and service" />
     <MESSAGE value="Authorization fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authorization fix" />
+    <MESSAGE value="Fix REST API for posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix REST API for posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

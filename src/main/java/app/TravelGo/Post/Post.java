@@ -31,13 +31,8 @@ public class Post implements Serializable {
     @Column(columnDefinition = "TEXT")
     private String content;
 
-    // TODO: auto assign user to post
-    //    @ManyToOne(fetch = FetchType.LAZY)
-    //    @JoinColumn(name = "user_id")
-    //    private User user;
-
     @Column(name = "user_id")
-    private int user;
+    private Long user;
 
     private int status;
     private int likes;
