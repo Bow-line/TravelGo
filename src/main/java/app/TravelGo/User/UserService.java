@@ -29,6 +29,13 @@ public class UserService {
         return userRepository.findByEmail(email);
     }
 
+    public boolean hasRole(Long userId, String searchedRole) {
+        User user = this.getUser(userId).get();
+
+        return user.getRoles().stream()
+                .anyMatch(role -> role.getName().equals(searchedRole));
+    }
+
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
     }

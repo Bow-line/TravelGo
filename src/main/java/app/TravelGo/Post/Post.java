@@ -1,13 +1,11 @@
 package app.TravelGo.Post;
 
-import app.TravelGo.User.User;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Getter
@@ -22,7 +20,6 @@ import java.time.LocalDateTime;
 public class Post implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "posts")
-    @SequenceGenerator(name = "my_entity_seq_gen", sequenceName = "MY_ENTITY_SEQ")
     @Column(name = "id")
     private Long id;
 

@@ -44,6 +44,8 @@ public class PostController {
                     .id(post.getId())
                     .title(post.getTitle())
                     .content(post.getContent())
+                    .userId(post.getUser())
+                    .likes(post.getLikes())
                     .build();
             return ResponseEntity.ok(postResponse);
         }
@@ -53,10 +55,17 @@ public class PostController {
     @DeleteMapping("/{post_id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Void> deletePost(@PathVariable("post_id") Long postId) {
-        boolean success = postService.deletePost(postId);
-        if (success) {
-            return ResponseEntity.ok().build();
+
+        Long userId = this.getCurrentUserId();
+        Long postOwnerId = postService.getPost(postId).get().getUser();
+
+        if (userId == postOwnerId || userService.hasRole(userId, "MODERATOR")) {
+            boolean success = postService.deletePost(postId);
+            if (success) {
+                return ResponseEntity.ok().build();
+            }
         }
+
         return ResponseEntity.notFound().build();
     }
 
